@@ -1,0 +1,323 @@
+\documentclass[]{beamer}
+
+%\usepackage{pgfpages}
+\usepackage{beamerthemesplit}
+\usepackage{graphicx}
+\usepackage{multimedia}
+\usepackage{hyperref}
+
+%\setbeameroption{show notes on second screen}
+%\setbeamertemplate{blocks}[rounded][shadow=true]
+\xdefinecolor{lgray}{cmyk}{0,0,0,0.05}
+\setbeamercolor{uppercol}{fg=white,bg=structure}
+\setbeamercolor{lowercol}{fg=black,bg=lgray}
+\setbeamertemplate{navigation symbols}{}
+\xdefinecolor{tuBlue}{rgb}{0,0.65,0.84}
+\usecolortheme[named=tuBlue]{structure}
+
+%\logo{\includegraphics[height=1cm]{tu-delft.jpg}}
+
+\title{Use of Human Power in the Developing World}
+\author[Jason~K.~Moore]{Reverend~Jason~K.~Moore}
+\institute[UC Davis]{Department of Mechanical and Aerospace Engineering\\University of California, Davis}
+%\date{October 9, 2009}
+\begin{document}
+
+\frame{\titlepage}
+\frame{\tableofcontents}
+
+\section{Introduction}
+\subsection{History}
+\frame
+{
+    \frametitle{Historical Uses of Human Power}
+    \begin{columns}[t]
+        \column{5cm}
+        \begin{overprint}
+        Transportation:
+        \begin{itemize}
+            \item<1->\alert<1>{walking and running}
+            \item<1->\alert<2>{hand carts}
+            \item<1->\alert<3>{rowing boats}
+            \item<1->\alert<4>{bicycle}
+        \end{itemize}
+        Tools:
+        \begin{itemize}
+            \item<1->\alert<5>{plow}
+            \item<1->\alert<6>{water pump}
+            \item<1->\alert<7>{food processors}
+            \item<1->\alert<8>{lathes, saws, sewing}
+        \end{itemize}
+        \end{overprint}
+        \column{6cm}
+		\begin{overprint}
+			\begin{figure}[]
+  				\centering
+  				\includegraphics[height=4cm]<1>{longWalk.jpg}
+  				\includegraphics[height=4cm]<2>{rickshaw.jpg}
+  				\includegraphics[height=4cm]<3>{galley.jpg}
+  				\includegraphics[height=4cm]<4>{bicycle.jpg}
+  				\includegraphics[height=4cm]<5>{plow.jpg}
+  				\includegraphics[height=4cm]<6>{waterPump.jpg}
+  				\includegraphics[height=6cm]<7>{mill.png}
+  				\includegraphics[height=6cm]<8>{lathe.png}
+  			\end{figure}
+		\end{overprint}
+        \end{columns}
+}
+\subsection{Human Power}
+\frame
+{
+    \frametitle{Power and Energy}
+    \begin{itemize}
+        \item<1-> We are fuel cells!
+        \item<2-> We digest food to creat energy
+    \end{itemize}
+    \onslide<3->
+	\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{Work}
+		\begin{center}
+            $Work = force \cdot distance$ $(Joules=Newtons\cdot Meters)$ 
+		\end{center}
+	\end{beamerboxesrounded}
+    \begin{itemize}
+        \item<4-> Power is the measure of how fast we can do work
+    \end{itemize}
+    \onslide<5->
+	\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{Power}
+		\begin{center}
+            $Power=\frac{Work}{Time}$ $(Watt = \frac{Joules}{Seconds})$
+        \end{center}
+	\end{beamerboxesrounded}
+}
+\frame
+{
+    \begin{center}
+        \includegraphics[width=7cm]<1>{powerVSduration.png}
+        \includegraphics[width=7cm]<2>{oneHour.png}
+        \includegraphics[width=7cm]<3>{fiveHours.png}
+    \end{center}
+}
+\frame
+{
+    \frametitle{Efficiency}
+    \begin{itemize}
+        \item<1-> We always lose energy when converting from one type to another.
+        \item<2-> Efficiency is the measure of this loss.
+    \end{itemize}
+    \onslide<3->
+	\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{Efficiency}
+        \begin{center}
+            $input\cdot efficiency=output$
+        \end{center}
+    \end{beamerboxesrounded}
+    \onslide<4->
+    \begin{itemize}
+        \item Most efficient means of mechanical work: pedaling or rowing
+    \end{itemize}
+    \begin{columns}[t]
+        \column{5.5cm}
+        \includegraphics[width=2cm]{pedaling.jpg}
+        \column{5.5cm}
+        \includegraphics[width=3cm]{rowing.jpg}
+    \end{columns}
+}
+\frame
+{
+    \frametitle{How efficient are we?}
+    \begin{itemize}[<+->]
+        \item ICE max efficiency is \structure{35\%}, but more like \alert{18\% to 20\%}
+        \item Electric motors/generators are \alert{65\% to 95\%} efficient
+        \item Humans are around \alert{18\% to 26\%} efficient in turning food energy to work
+        \item Efficiencies stack by multiplication
+    \end{itemize}
+}
+\frame
+{
+    \frametitle{Pedaling Rates}
+    \begin{itemize}
+        \item Optimum pedal and rowing rates for efficient power output
+        \item Usually need gear reduction or levers to optimize the power
+    \end{itemize}
+}
+\section{Machine Design}
+\subsection{Transforming Human Motion}
+\frame
+{
+    \frametitle{Pedaling to Rotational}
+    \begin{columns}[t]
+        \column{6cm}
+        \begin{itemize}
+            \item<1->\alert<1>{Chain drives: 90\%+}
+            \item<1->\alert<2>{Shaft drives: 80-90\%}
+            \item<1->\alert<3>{Flat belt drives: 90\%+}
+            \item<1->\alert<4>{Friction drives: $<$80\%}
+        \end{itemize}
+        \column{5cm}
+		\begin{overprint}
+			\begin{figure}[]
+  				\centering
+  				\includegraphics[height=4cm]<1>{chain.jpg}
+  				\includegraphics[height=4cm]<2>{bevel.jpg}
+  				\includegraphics[height=4cm]<3>{flatbelt.jpg}
+  				\includegraphics[height=4cm]<4>{friction.jpg}
+  			\end{figure}
+		\end{overprint}
+    \end{columns}
+}
+\frame
+{
+    \frametitle{Rotational to Electrical}
+    \begin{columns}[t]
+        \column{6cm}
+        \begin{itemize}[<+->]
+            \item Rotational generators are most common: 65-95\%
+            \item Difficult to find low speed generators
+            \item DC generators: voltage is proportional to the speed
+            \item Alternators: minimum excitation needed, but easy to find
+        \end{itemize}
+        \column{5cm}
+		\begin{overprint}
+			\begin{figure}[]
+ 				\centering
+  				\includegraphics[height=4cm]<1-3>{generator.jpg}
+  				\includegraphics[height=4cm]<4->{alternator.jpg}
+  			\end{figure}
+		\end{overprint}
+    \end{columns}
+}
+\subsection{Energy Storage}
+\frame
+{
+    \frametitle{Energy Storage Types}
+    \begin{itemize}[<+->]
+        \item Springs store potential energy \structure{$E=\frac{1}{2}kx^2$}
+        \item Flywheels store kinetic energy \structure{$E=\frac{1}{2}I\omega^2$}
+        \item Capacitors store energy like a spring \structure{$E=\frac{1}{2}CV^2$}
+        \item Batteries create energy from a chemical reaction and store energy
+        \item They all act as an energy buffer
+    \end{itemize}
+}
+\section{Real World Applications}
+\subsection{Successful Projects}
+\frame
+{
+    \frametitle{Kickstart Water Pumps}
+    \begin{center}
+        \begin{figure}[]
+            \includegraphics[width=7cm]{kickstart.jpg}
+        \end{figure}
+    \end{center}
+}
+\frame
+{
+    \frametitle{The Full Belly Project}
+    \begin{center}
+        \begin{figure}[]
+            \includegraphics[width=7cm]{fullbelly.jpg}
+        \end{figure}
+    \end{center}
+}
+\subsection{My Projects}
+\frame
+{
+    \frametitle{ZAmbulance and wheelchairs in Zambia, Africa}
+    \begin{columns}[t]
+        \column{6cm}
+        \begin{itemize}[<+->]
+            \item Short distance transport for patients
+            \item Materials are imported and very expensive
+            \item Only NGO's can purchase and distribute
+        \end{itemize}
+        \column{5cm}
+		\begin{overprint}
+			\begin{figure}[]
+  				\centering
+  				\includegraphics[height=4cm]<1>{zambulance.jpg}
+  				\includegraphics[height=4cm]<2>{wheelchair.jpg}
+  				\includegraphics[height=4cm]<3>{handTrike.jpg}
+  			\end{figure}
+		\end{overprint}
+    \end{columns}
+}
+\frame
+{
+    \frametitle{Human powered machines in Guatemala}
+    \begin{columns}[t]
+        \column{6cm}
+        \begin{itemize}[<+->]
+            \item Corn grinding for masa
+            \item Rope water pump
+            \item Macadamia nut husker
+            \item Clothes washing machine
+            \item Peanut sheller
+        \end{itemize}
+        \column{5cm}
+		\begin{overprint}
+		\begin{figure}[]
+  			\centering
+  				\includegraphics[height=4cm]<1>{cornGrinder.jpg}
+  				\includegraphics[height=4cm]<2>{waterPumpMaya.jpg}
+  				\includegraphics[height=4cm]<3>{macadamiaHusker.jpg}
+  				\includegraphics[height=4cm]<4>{wash.jpg}
+  				\includegraphics[height=4cm]<5>{peanutSheller.jpg}
+  			\end{figure}
+		\end{overprint}
+    \end{columns}
+}
+\frame
+{
+    \frametitle{UC Davis Human Powered Utility Vehicle}
+    \begin{center}
+        \begin{figure}[]
+            \includegraphics[width=7cm]{mike.jpg}
+        \end{figure}
+    \end{center}
+}
+\frame
+{
+    \frametitle{Pedal Desk}
+    \begin{columns}[t]
+        \column{6cm}
+        \begin{itemize}
+            \item Power a laptop with pedal power
+            \item Educate students on power usage
+            \item \href{http://news.bbc.co.uk/2/hi/science/nature/8394055.stm}{What does it take to power a home?}
+        \end{itemize}
+        \column{5cm}
+        \begin{center}
+        \begin{figure}[]
+            \includegraphics[width=4cm]{ped_desk.jpg}
+        \end{figure}
+        \end{center}
+    \end{columns}
+}
+\subsection{Example case}
+\frame
+{
+    \frametitle{Knife Sharpener}
+    \begin{columns}[t]
+        \column{6cm}
+        \begin{itemize}[<+->]
+            \item Grinders are used as a common method for sharpening knives
+            \item Electric grinder or mechanical?
+        \end{itemize}
+        \column{5cm}
+		\begin{overprint}
+			\begin{figure}[]
+  				\centering
+  				\includegraphics[width=4cm]<1>{ugandaGrinder02.jpg}
+  				\includegraphics[width=4cm]<2>{indiaGrinder.jpg}
+  			\end{figure}
+		\end{overprint}
+    \end{columns}
+}
+\frame
+{
+    \frametitle{Thanks for your time!}
+    \begin{center}
+        \begin{figure}[]
+            \includegraphics[width=5cm]{lineTrack.jpg}
+        \end{figure}
+    \end{center}
+}
+\end{document}
