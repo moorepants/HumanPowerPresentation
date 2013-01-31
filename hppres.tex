@@ -6,6 +6,7 @@
 \usepackage{multimedia}
 \usepackage{hyperref}
 
+% uncomment these for various versions of the notes
 %\setbeameroption{show notes on second screen}
 %\setbeameroption{show notes}
 %\setbeameroption{show only notes}
@@ -20,7 +21,7 @@
 %\logo{\includegraphics[height=1cm]{tu-delft.jpg}}
 
 \title{Use of Human Power in the Developing World}
-\author[Jason~K.~Moore]{Reverend~Jason~K.~Moore}
+\author[Jason~K.~Moore]{Rev.~Dr.~Jason~K.~Moore}
 \institute[UC Davis]{Department of Mechanical and Aerospace Engineering\\University of California, Davis}
 %\date{October 9, 2009}
 \begin{document}
@@ -143,6 +144,8 @@ unit of time. If I take all day to push this desk across the room versus taking
         \includegraphics[width=7cm]<1>{images/powerVSduration.png}
         \includegraphics[width=7cm]<2>{images/oneHour.png}
         \includegraphics[width=7cm]<3>{images/fiveHours.png}
+				\\
+				Wilson2004
     \end{center}
 }
 \note{\small{So now that we are refreshed about work and power, I'd like to show you
@@ -175,7 +178,7 @@ electrical consumption? Something like 270,000 people.}}
     \onslide<3->
 	\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{Efficiency}
         \begin{center}
-					$\cdot efficiency= \frac{output}{input}$
+					$efficiency= \frac{output}{input}$
         \end{center}
     \end{beamerboxesrounded}
     \onslide<4->
@@ -237,11 +240,13 @@ from food to electricity of something like 15\%.}
 		\begin{columns}[t]
 			\column{5cm}
 			\includegraphics[width=5cm]{images/power-vs-cadence-red.png}
+			\\
+			Wilson2004
 			\column{5cm}
-			\includegraphics[width=5cm]{images/motor-power-vs-rpm.png}
+			\includegraphics[width=5cm]{images/motor-power-vs-rpm-red.png}
 		\end{columns}
 		\begin{center}
-			\includegraphics[width=4.5cm]{images/motor-efficiency-vs-rpm.png}
+			\includegraphics[width=4.5cm]{images/motor-efficiency-vs-rpm-red.png}
 		\end{center}
 	\end{center}
 }
@@ -253,8 +258,9 @@ generate electricity with a DC generator. The plot on the right shows the power
 curve for a typical motor. The maximum power output here is around 1500 rpm.
 And on top of that the most efficient rpm for the motor is around 2300 rpm. A
 machine that couples the rider to the generator will have to be designed to
-take all of this and more into account. Motor graphs
-from: http://www.recumbents.com/mars/pages/proj/sadler/assist/projsadassist.html}
+take all of this and more into account. First graph taken from Wilson2004 and
+motor graphs from:
+http://www.recumbents.com/mars/pages/proj/sadler/assist/projsadassist.html}
 %
 \section{Machine Design}
 \subsection{Transforming Human Motion}
@@ -469,6 +475,42 @@ bicycle blender and now even an ice cream maker.}
 have worked on various forms of human powered machines with interchangeable
 devices.}
 %
+\frame
+{
+    \frametitle{iRock Rocking Chair}
+    \begin{center}
+        \begin{figure}[]
+            \includegraphics[width=6cm]{images/irock_rocking_chair.jpg}
+        \end{figure}
+        \url{http://www.treehugger.com/gadgets/irock-rocking-chair-charges-your-apple-device.html}
+    \end{center}
+}
+\note{Clever way to extract energy from rocking.}
+%
+\frame
+{
+    \frametitle{Piezoelectric Dance Floor}
+    \begin{center}
+        \begin{figure}[]
+            \includegraphics[width=6cm]{images/piezo-dance-floor.jpg}
+        \end{figure}
+    \end{center}
+}
+\note{Piezoelectric floor tiles generate enough energy from dancing to power
+LEDs in the floor.}
+%
+\frame
+{
+    \frametitle{Electricity generating backpack}
+    \begin{center}
+        \begin{figure}[]
+            \includegraphics[width=6cm]{images/electric-backpack.jpg}
+        \end{figure}
+        \url{http://www.lightningpacks.com}
+    \end{center}
+}
+\note{Recovers electricity from normal walking.}
+%
 \subsection{My Projects}
 \frame
 {
@@ -540,7 +582,7 @@ devices.}
         \begin{itemize}
             \item Power a laptop with pedal power
             \item Educate students on power usage
-            \item \href{http://news.bbc.co.uk/2/hi/science/nature/8394055.stm}{What does it take to power a home?}
+						\item \url{http://mae.ucdavis.edu/~biosport/jkm/ped_desk.htm}
         \end{itemize}
         \column{5cm}
         \begin{center}
